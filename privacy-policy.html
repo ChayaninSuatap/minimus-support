@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Privacy Policy for the Minimus mobile application."
+    />
+    <title>Privacy Policy · Minimus</title>
+    <link rel="icon" type="image/png" href="minimus-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Nunito:wght@700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --ink: #1d2f20;
+        --muted: #627065;
+        --line: #dbe8dc;
+        --mint: #e9f8e6;
+        --green: #377d3d;
+        --paper: #fcfdf9;
+      }
+
+      * { box-sizing: border-box; }
+
+      body {
+        margin: 0;
+        min-width: 320px;
+        color: var(--ink);
+        background:
+          radial-gradient(circle at 5% 10%, #dff5d9 0 10rem, transparent 10.1rem),
+          #f4f8f1;
+        font-family: "DM Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      }
+
+      main {
+        width: min(100% - 2rem, 52rem);
+        margin: 0 auto;
+        padding: 1.5rem 0 3rem;
+      }
+
+      .shell {
+        overflow: hidden;
+        border: 1px solid rgba(47, 113, 55, .13);
+        border-radius: 2rem;
+        background: var(--paper);
+        box-shadow: 0 1.25rem 3.5rem rgba(35, 82, 39, .13);
+      }
+
+      header {
+        position: relative;
+        min-height: 15rem;
+        padding: 1.75rem 2rem 2rem;
+        overflow: hidden;
+        color: white;
+        background: linear-gradient(135deg, #337f3c, #51a54a);
+      }
+
+      header::after {
+        position: absolute;
+        right: -6rem;
+        bottom: -8rem;
+        width: 20rem;
+        height: 20rem;
+        border: 1.8rem solid rgba(255, 255, 255, .1);
+        border-radius: 50%;
+        content: "";
+      }
+
+      .brand {
+        display: inline-flex;
+        position: relative;
+        z-index: 1;
+        align-items: center;
+        gap: .75rem;
+        color: white;
+        font-weight: 700;
+        text-decoration: none;
+      }
+
+      .brand img {
+        width: 2.5rem;
+        height: 2.5rem;
+        border-radius: .7rem;
+        box-shadow: 0 .3rem .8rem rgba(0, 0, 0, .18);
+      }
+
+      h1, h2 { font-family: "Nunito", "DM Sans", sans-serif; }
+
+      h1 {
+        position: relative;
+        z-index: 1;
+        max-width: 22rem;
+        margin: 2.2rem 0 0;
+        font-size: clamp(2.3rem, 8vw, 3.5rem);
+        font-weight: 900;
+        letter-spacing: -.06em;
+        line-height: .98;
+      }
+
+      .date {
+        position: relative;
+        z-index: 1;
+        margin: .8rem 0 0;
+        color: rgba(255, 255, 255, .82);
+        font-size: .95rem;
+      }
+
+      .broccoli {
+        position: absolute;
+        z-index: 1;
+        right: -1.5rem;
+        bottom: -3rem;
+        width: min(37vw, 13rem);
+        transform: rotate(-8deg);
+      }
+
+      article { padding: 2rem; }
+
+      section { margin-top: 2rem; }
+      section:first-child { margin-top: 0; }
+
+      h2 {
+        display: flex;
+        align-items: center;
+        gap: .65rem;
+        margin: 0 0 .65rem;
+        font-size: 1.35rem;
+        font-weight: 900;
+        letter-spacing: -.035em;
+      }
+
+      h2::before {
+        width: .55rem;
+        height: .55rem;
+        flex: 0 0 auto;
+        border-radius: 50%;
+        background: #75bc68;
+        content: "";
+      }
+
+      p, li {
+        color: var(--muted);
+        font-size: 1rem;
+        line-height: 1.65;
+      }
+
+      p { margin: 0; }
+      p + p { margin-top: .75rem; }
+
+      ul {
+        display: grid;
+        gap: .4rem;
+        margin: .75rem 0 0;
+        padding-left: 1.25rem;
+      }
+
+      li::marker { color: var(--green); }
+
+      a {
+        color: #276630;
+        font-weight: 700;
+        overflow-wrap: anywhere;
+        text-decoration-color: #a6cfa5;
+        text-decoration-thickness: .1em;
+        text-underline-offset: .14em;
+      }
+
+      .notice {
+        padding: 1rem 1.1rem;
+        border: 1px solid #d9ebd4;
+        border-radius: 1rem;
+        background: var(--mint);
+      }
+
+      .notice p { color: #385a3e; }
+
+      @media (min-width: 42rem) {
+        main { padding-top: 3rem; }
+        header { min-height: 17rem; padding: 2.5rem 3rem; }
+        article { padding: 2.75rem 3rem; }
+        .broccoli { right: 1.5rem; width: 12rem; }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="shell">
+        <header>
+          <a class="brand" href="index.html">
+            <img src="minimus-icon.png" alt="Minimus app icon" />
+            <span>minimus</span>
+          </a>
+          <h1>Privacy Policy</h1>
+          <p class="date">Last updated: September 11, 2026</p>
+          <img class="broccoli" src="broccoli-wondering.png" alt="" />
+        </header>
+
+        <article>
+          <section>
+            <div class="notice">
+              <p>Minimus is made by Chayanin Suatap. This policy explains how the Minimus iOS app handles information when you use it.</p>
+            </div>
+          </section>
+
+          <section>
+            <h2>What stays on your device</h2>
+            <p>Your meal log, nutrition goals, meal details, and saved meal photos are stored locally on your device. Minimus does not create an account for you or upload your completed meal history to a Minimus server.</p>
+            <p>You can remove local meal data by deleting individual meals or deleting the app. Short voice recordings are kept temporarily only while they are transcribed, then deleted by the app.</p>
+          </section>
+
+          <section>
+            <h2>AI meal analysis</h2>
+            <p>When you choose to analyze a meal, the information needed for that request is sent to Google Gemini through Firebase AI Logic:</p>
+            <ul>
+              <li>typed meal descriptions;</li>
+              <li>the photo you choose or capture for analysis; or</li>
+              <li>a voice recording used to transcribe a meal.</li>
+            </ul>
+            <p>Google returns an analysis that Minimus uses to suggest meal and nutrition details. The app asks for your agreement before you first use these AI features. Google may process request content and technical information under its own terms and privacy practices. Please avoid including information you do not want to send for analysis. Learn more in Google’s <a href="https://firebase.google.com/docs/ai-logic/monitoring" target="_blank" rel="noreferrer">Firebase AI Logic monitoring documentation</a> and <a href="https://ai.google.dev/gemini-api/terms" target="_blank" rel="noreferrer">Gemini API terms</a>.</p>
+          </section>
+
+          <section>
+            <h2>Permissions</h2>
+            <p>Minimus asks for access to the camera, photo library, or microphone only when you use the related feature. You may decline or revoke these permissions in iOS Settings; the related feature will then be unavailable.</p>
+          </section>
+
+          <section>
+            <h2>Subscriptions</h2>
+            <p>Purchases are processed by Apple. Minimus uses RevenueCat to verify subscription status, show available plans, and restore purchases. RevenueCat may receive technical device information and purchase-related information, such as a purchase receipt or subscription status, to provide that service. We do not receive your payment-card details. See <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noreferrer">RevenueCat’s Privacy Policy</a> and <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noreferrer">Apple’s Privacy Policy</a>.</p>
+          </section>
+
+          <section>
+            <h2>App operations and support</h2>
+            <p>Minimus uses Firebase Remote Config to check whether the installed app version remains supported. Firebase and the services above may process limited technical information needed to operate their services.</p>
+            <p>If you contact us at <a href="mailto:minimusbroco@gmail.com">minimusbroco@gmail.com</a>, we receive the information you include, such as your email address and message, and keep it only as long as reasonably needed to respond and maintain support records.</p>
+          </section>
+
+          <section>
+            <h2>Sharing and choices</h2>
+            <p>We do not sell your personal information or use it for advertising. We share information only with the service providers described above when needed to operate the app, process a purchase, or respond to you. Those providers may process information in countries other than yours under their own privacy terms.</p>
+            <p>For privacy questions or a request about information you sent to us, email <a href="mailto:minimusbroco@gmail.com">minimusbroco@gmail.com</a>. We may update this policy when the app or its data practices change; the current version will be posted on this page.</p>
+          </section>
+        </article>
+      </div>
+    </main>
+  </body>
+</html>
