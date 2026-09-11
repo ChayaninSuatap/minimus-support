@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Get help with Minimus, your simple daily nutrition tracker."
+    />
+    <title>Minimus Support</title>
+    <link rel="icon" type="image/png" href="minimus-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Nunito:wght@700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --ink: #1d2f20;
+        --muted: #657267;
+        --line: #dbe8dc;
+        --mint: #e9f8e6;
+        --green: #377d3d;
+        --green-dark: #276630;
+        --paper: #fcfdf9;
+      }
+
+      * { box-sizing: border-box; }
+
+      body {
+        margin: 0;
+        min-width: 320px;
+        color: var(--ink);
+        background:
+          radial-gradient(circle at 6% 12%, #dff5d9 0 10.5rem, transparent 10.6rem),
+          radial-gradient(circle at 95% 91%, #e6f6d7 0 13rem, transparent 13.1rem),
+          #f4f8f1;
+        font-family: "DM Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      }
+
+      main {
+        width: min(100% - 2rem, 48rem);
+        margin: 0 auto;
+        padding: 1.5rem 0 3rem;
+      }
+
+      .shell {
+        overflow: hidden;
+        background: var(--paper);
+        border: 1px solid rgba(47, 113, 55, .13);
+        border-radius: 2rem;
+        box-shadow: 0 1.25rem 3.5rem rgba(35, 82, 39, .13);
+      }
+
+      header {
+        position: relative;
+        min-height: 18rem;
+        padding: 2rem 2rem 1.75rem;
+        overflow: hidden;
+        color: white;
+        background: linear-gradient(135deg, #337f3c, #51a54a);
+      }
+
+      header::after {
+        position: absolute;
+        right: -5rem;
+        bottom: -7rem;
+        width: 19rem;
+        height: 19rem;
+        border: 1.8rem solid rgba(255, 255, 255, .11);
+        border-radius: 50%;
+        content: "";
+      }
+
+      .brand {
+        display: flex;
+        position: relative;
+        z-index: 1;
+        align-items: center;
+        gap: .75rem;
+        font-weight: 700;
+        letter-spacing: -.02em;
+      }
+
+      .brand img {
+        width: 2.5rem;
+        height: 2.5rem;
+        border-radius: .7rem;
+        box-shadow: 0 .3rem .8rem rgba(0, 0, 0, .18);
+      }
+
+      .hero-copy { margin-top: 2.25rem; max-width: 26rem; }
+
+      h1, h2 { font-family: "Nunito", "DM Sans", sans-serif; }
+
+      h1 {
+        max-width: 15rem;
+        margin: 0;
+        font-size: clamp(2.35rem, 8vw, 3.5rem);
+        font-weight: 900;
+        letter-spacing: -.065em;
+        line-height: .96;
+      }
+
+      .hero-copy p {
+        max-width: 21rem;
+        margin: .85rem 0 0;
+        color: rgba(255, 255, 255, .86);
+        font-size: 1.06rem;
+        line-height: 1.55;
+      }
+
+      .broccoli {
+        position: absolute;
+        z-index: 1;
+        right: -1.1rem;
+        bottom: -2.6rem;
+        width: min(42vw, 15rem);
+        transform: rotate(-8deg);
+      }
+
+      .content { padding: 2rem; }
+
+      .intro {
+        margin: 0 0 1.7rem;
+        color: var(--muted);
+        font-size: 1rem;
+        line-height: 1.6;
+      }
+
+      .help-list { display: grid; gap: 1rem; }
+
+      .card {
+        display: grid;
+        grid-template-columns: 2.7rem 1fr;
+        gap: 1rem;
+        align-items: start;
+        padding: 1.2rem;
+        border: 1px solid var(--line);
+        border-radius: 1.2rem;
+        background: white;
+      }
+
+      .icon {
+        display: grid;
+        width: 2.7rem;
+        height: 2.7rem;
+        place-items: center;
+        border-radius: .9rem;
+        color: var(--green-dark);
+        background: var(--mint);
+      }
+
+      .icon svg { width: 1.35rem; height: 1.35rem; }
+
+      h2 {
+        margin: .05rem 0 .35rem;
+        font-size: 1.28rem;
+        font-weight: 900;
+        letter-spacing: -.035em;
+      }
+
+      .card p {
+        margin: 0;
+        color: var(--muted);
+        font-size: 1rem;
+        line-height: 1.58;
+      }
+
+      a {
+        color: var(--green-dark);
+        font-weight: 700;
+        overflow-wrap: anywhere;
+        text-decoration-color: #a6cfa5;
+        text-decoration-thickness: .1em;
+        text-underline-offset: .14em;
+      }
+
+      a:hover { color: #154c1f; }
+
+      .card a { font-size: .9em; }
+
+      footer {
+        padding-top: 1.6rem;
+        color: #849287;
+        font-size: .88rem;
+        text-align: center;
+      }
+
+      @media (min-width: 42rem) {
+        main { padding-top: 3rem; }
+        header { min-height: 20rem; padding: 2.5rem 3rem; }
+        .content { padding: 2.75rem 3rem; }
+        .broccoli { right: 1.5rem; width: 14rem; }
+        .hero-copy { margin-top: 2.7rem; }
+      }
+
+      @media (max-width: 30rem) {
+        .card { grid-template-columns: 1fr; gap: .65rem; }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="shell">
+        <header>
+          <div class="brand">
+            <img src="minimus-icon.png" alt="Minimus app icon" />
+            <span>minimus</span>
+          </div>
+          <div class="hero-copy">
+            <h1>How can we help?</h1>
+            <p>Support for your little daily nutrition habit.</p>
+          </div>
+          <img class="broccoli" src="broccoli-wondering.png" alt="" />
+        </header>
+
+        <section class="content" aria-label="Support options">
+          <p class="intro">
+            Whether you have a question, spotted something odd, or want to share an idea, we would love to hear from you.
+          </p>
+
+          <div class="help-list">
+            <article class="card">
+              <div class="icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M4 4h16v12H8l-4 4V4Z"/><path d="M8 9h8M8 13h5"/></svg>
+              </div>
+              <div>
+                <h2>Contact support</h2>
+                <p>For questions, feedback, or help with Minimus, email <a href="mailto:minimusbroco@gmail.com">minimusbroco@gmail.com</a>.</p>
+              </div>
+            </article>
+
+            <article class="card">
+              <div class="icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M12 3v18M3 12h18"/><circle cx="12" cy="12" r="8.5"/></svg>
+              </div>
+              <div>
+                <h2>Subscription &amp; refunds</h2>
+                <p>Subscriptions and refunds are handled by Apple. Visit <a href="https://support.apple.com/en-us/118223" target="_blank" rel="noreferrer">Apple Support</a> to request a refund or manage a purchase.</p>
+              </div>
+            </article>
+          </div>
+        </section>
+      </div>
+      <footer>Made for the small choices that add up.</footer>
+    </main>
+  </body>
+</html>
